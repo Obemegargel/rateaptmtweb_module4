@@ -1,0 +1,35 @@
+<!-- Inside other.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a href="{{url_for('index')}}">Link to Other HTML</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Page</title>
+</head>
+<body>
+    <h1>Data from CSV</h1>
+    <table border="1">
+        <tr>
+            <th> Their Last Apartment Name</th>
+            <th>Their Last Housing Type</th>
+            <th>How they rated it</th>
+            <th>What it cost</th>
+            <th>Their Upcoming Apartment Name</th>
+            <th>For the Upcoming Semester</th>
+            <th>Most recent Cost</th>
+        </tr>
+        {% for row in data %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
+                <td>{{ row[6] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    
+    <a href="{{url_for('other')}}">Reference Data</a>
+</head>
+<body>
+    
+    <form method="POST" action="/submit">
+        <h2>Rate My Apartment</h2>
+        <section class="last">
+                <!--question1: Past Apartment Complex Name if applicable-->
+            <h2>Last Apartment Lease</h2>
+            <label for="lastapartmentqustion1">Last Apartment Name (If applicable):</label>
+            <select class="drop" id="lastapartment" name="lastapartmentname">
+                <option value="notapplicable">Not Applicable</option>
+                <option value="nauvoohouse">Nauvoo House</option>
+                <option value="thecove">The Cove</option>
+                <option value="somerset">Somerset</option>
+                <option value="alpinechalet">Alpine Chalet</option>
+                <option value="alpinechalet">Other</option>
+            </select><br>
+            <!--question2: Past Apartment Complex Cost if rememberable-->
+            <label for="lastapartmentqustion2">Last Apartment housing type:</label>
+            <select class="drop" id="lasthousing" name="lasthousingtype">
+                <option value="notapplicable">Not Applicable</option>
+                <option value="lastmarried">married</option>
+                <option value="lastwomen">Womens</option>
+                <option value="lastmen">Mens</option>
+                <option value="lastunaproved">Not School aproved housing</option>
+                <option value="lastunique">Unique exception</option>
+            </select><br>
+            <!--question3: Past Apartment Complex Semester if Applicable-->
+            <label for="lastapartmentqustion3">Last Apartment Overall Rating:</label>
+            <select class="drop" id="laststar" name="laststarrating">
+                <option value="pastonestar">Not Applicable</option>
+                <option value="pastonestar">One Star (terrible)</option>
+                <option value="pasttwostar">Two Stars (not the best)</option>
+                <option value="pastthreestar">Three Stars (average)</option>
+                <option value="pastfourstar">Four Stars (above average)</option>
+                <option value="pastfivestar">Five Stars (amazing)</option>
+            </select><br>
+            <!--question4: Past Apartment Complex Cost if rememberable-->
+            <label id="pastsemcost" for="semestercost">Cost Last Semester (if you remember)?</label>
+            $<input type="number" id="cost" name="pastcost" min="0" max="10000"><br>
+        </section>
+        
+
+        <p>_____________________________________________________________________</p><br>
+
+        <section class="last">
+                <!--question6: Upcoming Apartment Complex Name if Applicable-->
+            <h2 class="head2">Next Apartment Lease</h2>
+            <label for="nextapartmentqustion1">Upcoming Apartment Name (If applicable):</label>
+            <select class="drop" id="nextapartment" name="nextapartmentname">
+                <option value="notapplicable">Not Applicable</option>
+                <option value="nauvoohouse">Nauvoo House</option>
+                <option value="thecove">The Cove</option>
+                <option value="somerset">Somerset</option>
+                <option value="alpinechalet">Alpine Chalet</option>
+                <option value="alpinechalet">Other</option>
+            </select><br>
+            <!--question7: Upcomnig Apartment Complex Semester if Applicable-->
+            <label for="nextapartmentqustion2">Upcoming Apartmetn Lease:</label>
+            <select class="drop" id="nextsemester" name="nextsemestername">
+                <option value="notapplicable">Not Applicable</option>
+                <option value="fall">Fall</option>
+                <option value="winter">Winter</option>
+                <option value="summer">Summer</option>
+                <option value="spring">Spring</option>
+                <option value="fallwinter">Combo Fall & Winter</option>
+                <option value="fallsummer">Combo Fall & Summer</option>
+                <option value="fallspring">Combo Fall & Spring</option>
+                <option value="wintersummer">Combo Winter & Summer</option>
+                <option value="winterspring">Combo Winter & Spring</option>
+                <option value="summerspring">Combo Summer & Spring</option>
+                <option value="other">other</option>
+                <option value="all year">Combo All Year</option>
+            </select><br>
+            <!--question8: Upcoming Apartment Complex total Cost after all payments are made-->
+            <label id="nextsemcost" for="semestercost">Cost Upcoming Semester (if you remember)?</label>
+            $<input type="number" id="cost" name="nextcost" min="0" max="10000"><br>
+        </section>
+        
+        <!--question9: Did you get a special deal? For example sign up for two semesters at a time get discount?-->
+        <!--question10: if you did get a discount or deal how much did you save? -->
+        <!--question11-->
+
+
+        <!-- <label for="name">Name:</label> -->
+        <!--<input type="text" id="name" name="name" required>--><!--the app.py form is using the name="" when saving to the file. id seems to be for the css but name is for the backend stuff.-->
+        <!-- <br> -->
+        <!-- <label for="email">Email:</label> -->
+        <!-- <input type="email" id="email" name="email" required> -->
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
