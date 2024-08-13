@@ -10,8 +10,6 @@ http://127.0.0.1:5000
 and paste it in a search engine.
 
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
-
 [Software Demo Video](https://youtu.be/0RmBHJBX5QI)
 
 # Web Pages
@@ -25,24 +23,21 @@ There are links to move conveniently between both pages.
 The form is written in html, and is stylized using css.
 In a python file I use flask to take the values I request from the form and write those values to a csv file. Then I take that csv file and again using flask I write the csv information to a table on my second page.
 
-{Describe the tools that you used to develop the software}
--Visual Studio Code 2022
+Tools Used to make project
+    -Visual Studio Code 2022
 
-{Describe the programming language that you used and any libraries.}
--python 3.11.5 64bit 
--css
--html
--flask (framework) you don't need to download anything
-# Useful Websites
+Language and Libraries:
+    -python 3.11.5 64bit 
+    -css
+    -html
+    -flask (framework) you don't need to download anything
 
-{Make a list of websites that you found helpful in this project}
-* [ChatGPT](https://chat.openai.com/c/e9ebf047-a510-470d-833b-5193997e7f15)
-    Ask ChatGPT things like how to write to a csv file using a html and css form and then post your code as you go, allows Chat GPT to give you ideas on how to fix it and helps you understand how your files can be set up. It is good for learning how to make things and is not just used for getting the answer because sometimes it does not work so you must understand what is going on. Still very useful though.
-* [Stack Overflow](https://stackoverflow.com/)
+Useful Websites I found helpful
+    * [ChatGPT](https://chat.openai.com/c/e9ebf047-a510-470d-833b-5193997e7f15)
+        Ask ChatGPT things like how to write to a csv file using a html and css form and then post your code as you go, allows Chat GPT to give you ideas on how to fix it and helps you understand how your files can be set up. It is good for learning how to make things and is not just used for getting the answer because sometimes it does not work so you must understand what is going on. Still very useful though.
+    * [Stack Overflow](https://stackoverflow.com/)
 
-# Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1 Add more updated questions
-* Item 2 Eventually get it online
-* Item 3 perform calculations on data recieved as well as filters
+Future plans for my website:
+    * Item 1 Add more updated questions
+    * Item 2 Eventually get it online
+    * Item 3 perform calculations on data recieved as well as filters
